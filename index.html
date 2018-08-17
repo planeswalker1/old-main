@@ -1,0 +1,17 @@
+---
+layout: default
+title: Daniel Munoz - Front End Web Developer - Long Beach, California
+heading-1: I make Responsive Websites
+meta: Hi my name is Daniel Munoz. I am a programmer from Long Beach, California that focuses in the Front-End of Web Development. I like to make websites with HTML, CSS and javaScript. My goal is to offer tailored online solutions. Discover some cool respsonsive websites.
+---
+
+{% include header.html classname="header--home" %}
+<main>
+  <div class="projects">
+    {% for project in site.data.projects %}
+      <div class="projects__project project--{{ project.class }}">
+        <p><a class="projects__link" href="{{ project.source }}">{{ project.title }}</a></p>
+      </div>
+    {% endfor %}
+  </div>
+</main>

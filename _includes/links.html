@@ -1,0 +1,12 @@
+{% if page.url == '/' %}
+  <li class="nav__item"><span class="active">Ho</span>me</li>
+  {% else %}
+  <li><a class="nav__link" href="{{ site.baseurl }}/"><span>Pr</span>ojects</a></li>
+{% endif %}
+{% if page.url == '/contact/' %}
+  <li class="nav__item"><span class="active">Co</span>ntact</li>
+{% else %}
+  <li><a class="nav__link" href="{{ site.baseurl }}/contact/"><span>Co</span>ntact</a></li>
+{% endif %}
+<li><a class="nav__link" href="https://github.com/planeswalker1">Github</a></li>
+<li><a class="nav__link" href="https://planeswalker1.github.io/resume/">Resume</a></li>

@@ -1,0 +1,31 @@
+html {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f5f5f5;
+  font-family: 'Roboto Slab', serif;
+  margin: 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+a {
+  color: #00D3EB;
+}
+
+.header a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+footer {
+  background-color: #696969;
+  color: #fff;
+  overflow: auto;
+}
